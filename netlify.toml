@@ -1,0 +1,9 @@
+[build]
+  command = "bash netlify_build.sh"
+  publish = "build/web"
+
+# SPA redirect (necesario para rutas del lado del cliente)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
